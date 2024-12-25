@@ -19,6 +19,7 @@
     <meta name="language" content="English">
     <link rel="canonical" href="https://charadesonline.org">
     
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6069056496690883" crossorigin="anonymous"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script defer data-domain="charadesonline.org" src="https://app.pageview.app/js/script.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -56,6 +57,17 @@
                     Generate Random Word
                 </button>
                 <div id="result" class="mt-6 text-2xl font-bold text-gray-800 min-h-[60px]"></div>
+                
+                <!-- Ad placement after result -->
+                <div class="mt-8 text-center ad-container">
+                    <ins class="adsbygoogle"
+                         style="display:inline-block;width:728px;height:90px"
+                         data-ad-client="ca-pub-6069056496690883"
+                         data-ad-slot="8605437305"></ins>
+                    <script>
+                         (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                </div>
                 
                 <!-- Social Share Buttons -->
                 <div class="mt-6 flex justify-center space-x-4" id="shareButtons" style="display: none;">
@@ -280,6 +292,16 @@
                 }, 2000);
             });
         }
+
+        // Initialize ads after content is loaded
+        window.addEventListener('load', function() {
+            try {
+                // Initialize all ads
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            } catch (e) {
+                console.error('Ad loading error:', e);
+            }
+        });
     </script>
 </body>
 </html>
