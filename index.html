@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Charades Generator | Family Friendly Word Game Generator</title>
+    <meta name="description" content="Generate fun, family-friendly charades words and phrases instantly with our free charades generator. Perfect for parties, game nights, and classroom activities.">
+    <meta name="keywords" content="charades generator, word generator, charades words, family game night, party games, charades phrases, charades ideas, family friendly charades">
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="Free Charades Generator | Family Friendly Word Game">
+    <meta property="og:description" content="Generate fun, family-friendly charades words and phrases instantly. Perfect for parties and game nights!">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://charadesonline.org">
+    
+    <!-- Additional SEO Meta Tags -->
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <link rel="canonical" href="https://charadesonline.org">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="bg-white">
+    <!-- Header -->
+    <header class="fixed w-full bg-white/90 backdrop-blur-md z-50">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="text-2xl font-bold text-gray-800">CharadesGo</div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#features" class="text-gray-600 hover:text-gray-900">Features</a>
+                    <a href="#how-it-works" class="text-gray-600 hover:text-gray-900">How It Works</a>
+                    <a href="#testimonials" class="text-gray-600 hover:text-gray-900">Testimonials</a>
+                    <a href="#faq" class="text-gray-600 hover:text-gray-900">FAQ</a>
+                </div>
+                <button class="bg-indigo-600 text-white px-6 py-2 rounded-full hover:bg-indigo-700 transition">
+                    Get Started
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 bg-gradient-to-b from-indigo-50 to-white">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-5xl md:text-6xl font-bold text-gray-900 mb-8">
+                Free Charades Word Generator
+            </h1>
+            <p class="text-xl text-gray-600 mb-12 max-w-2xl mx-auto">
+                Generate endless family-friendly charades words and phrases instantly. The perfect free tool for game nights, parties, classroom activities, and family entertainment.
+            </p>
+            <div class="max-w-lg mx-auto bg-white rounded-2xl shadow-lg p-6">
+                <button id="generateBtn" class="w-full bg-indigo-600 text-white px-8 py-4 rounded-xl text-lg font-semibold hover:bg-indigo-700 transition">
+                    Generate Random Word
+                </button>
+                <div id="result" class="mt-6 text-2xl font-bold text-gray-800 min-h-[60px]"></div>
+                
+                <!-- Social Share Buttons -->
+                <div class="mt-6 flex justify-center space-x-4" id="shareButtons" style="display: none;">
+                    <button onclick="shareOnTwitter()" class="flex items-center space-x-2 bg-[#1DA1F2] text-white px-4 py-2 rounded-lg hover:bg-[#1a8cd8] transition">
+                        <i class="fab fa-twitter"></i>
+                        <span>Tweet</span>
+                    </button>
+                    <button onclick="shareOnFacebook()" class="flex items-center space-x-2 bg-[#4267B2] text-white px-4 py-2 rounded-lg hover:bg-[#365899] transition">
+                        <i class="fab fa-facebook-f"></i>
+                        <span>Share</span>
+                    </button>
+                    <button onclick="shareOnWhatsApp()" class="flex items-center space-x-2 bg-[#25D366] text-white px-4 py-2 rounded-lg hover:bg-[#128C7E] transition">
+                        <i class="fab fa-whatsapp"></i>
+                        <span>Share</span>
+                    </button>
+                    <button onclick="copyToClipboard()" class="flex items-center space-x-2 bg-gray-600 text-white px-4 py-2 rounded-lg hover:bg-gray-700 transition">
+                        <i class="fas fa-copy"></i>
+                        <span>Copy</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features" class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center text-gray-900 mb-16">Features</h2>
+            <div class="grid md:grid-cols-3 gap-12">
+                <div class="text-center">
+                    <div class="bg-indigo-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-magic text-2xl text-indigo-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Instant Generation</h3>
+                    <p class="text-gray-600">Get random words and phrases with just one click</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-indigo-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-shield-alt text-2xl text-indigo-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Family Friendly</h3>
+                    <p class="text-gray-600">All content is safe and appropriate for all ages</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-indigo-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-infinity text-2xl text-indigo-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Endless Options</h3>
+                    <p class="text-gray-600">Never run out of fun words to act out</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="how-it-works" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center text-gray-900 mb-16">How It Works</h2>
+            <div class="grid md:grid-cols-3 gap-12">
+                <div class="text-center">
+                    <div class="text-4xl font-bold text-indigo-600 mb-4">1</div>
+                    <h3 class="text-xl font-semibold mb-4">Click Generate</h3>
+                    <p class="text-gray-600">Press the generate button to get your word or phrase</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl font-bold text-indigo-600 mb-4">2</div>
+                    <h3 class="text-xl font-semibold mb-4">Act It Out</h3>
+                    <p class="text-gray-600">Use gestures and actions to help others guess</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl font-bold text-indigo-600 mb-4">3</div>
+                    <h3 class="text-xl font-semibold mb-4">Have Fun</h3>
+                    <p class="text-gray-600">Enjoy the laughter and fun with family and friends</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center text-gray-900 mb-16">What People Say</h2>
+            <div class="grid md:grid-cols-3 gap-12">
+                <div class="bg-white p-8 rounded-2xl shadow-lg">
+                    <p class="text-gray-600 mb-6">"Perfect for our family game nights! The kids absolutely love it."</p>
+                    <div class="font-semibold">Sarah M.</div>
+                    <div class="text-gray-500 text-sm">Parent of 3</div>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-lg">
+                    <p class="text-gray-600 mb-6">"We use this for our classroom activities. It's educational and fun!"</p>
+                    <div class="font-semibold">John D.</div>
+                    <div class="text-gray-500 text-sm">Elementary Teacher</div>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-lg">
+                    <p class="text-gray-600 mb-6">"So simple to use and always brings lots of laughs to our parties."</p>
+                    <div class="font-semibold">Emily R.</div>
+                    <div class="text-gray-500 text-sm">Party Host</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center text-gray-900 mb-16">Frequently Asked Questions</h2>
+            <div class="max-w-3xl mx-auto space-y-8">
+                <div>
+                    <h3 class="text-xl font-semibold mb-2">Is it really free?</h3>
+                    <p class="text-gray-600">Yes, CharadesGo is completely free to use!</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-2">Are the words appropriate for children?</h3>
+                    <p class="text-gray-600">Absolutely! All our content is family-friendly and suitable for all ages.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-2">Can I suggest new words?</h3>
+                    <p class="text-gray-600">We're always looking to expand our collection. Contact us with your suggestions!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-2xl font-bold mb-4">CharadesOnline</h3>
+                    <p class="text-gray-400">Making family game nights more fun, one word at a time.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#features" class="hover:text-white">Features</a></li>
+                        <li><a href="#how-it-works" class="hover:text-white">How It Works</a></li>
+                        <li><a href="#testimonials" class="hover:text-white">Testimonials</a></li>
+                        <li><a href="#faq" class="hover:text-white">FAQ</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Contact</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>Email: hello@charadesonline.org</li>
+                        <li>Twitter: @charadesonline</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Follow Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 CharadesOnline.org. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Words and phrases for the generator
+        const words = [
+            "Elephant", "Swimming", "Pizza", "Dancing", "Airplane",
+            "Reading a book", "Playing piano", "Basketball", "Cooking dinner",
+            "Riding a bicycle", "Taking a photo", "Building a sandcastle",
+            "Brushing teeth", "Flying a kite", "Jumping rope",
+            "Playing guitar", "Painting a picture", "Fishing",
+            "Making a snowman", "Playing tennis", "Eating spaghetti",
+            "Climbing a tree", "Wrapping a present", "Feeding a baby",
+            "Walking a dog", "Planting a flower", "Building with blocks",
+            "Writing a letter", "Making a sandwich", "Playing volleyball"
+        ];
+
+        const generateBtn = document.getElementById('generateBtn');
+        const result = document.getElementById('result');
+
+        generateBtn.addEventListener('click', () => {
+            // Add animation class
+            result.style.opacity = '0';
+            
+            // Generate random word
+            const randomWord = words[Math.floor(Math.random() * words.length)];
+            
+            // Update with animation
+            setTimeout(() => {
+                result.textContent = randomWord;
+                result.style.opacity = '1';
+                // Show share buttons
+                document.getElementById('shareButtons').style.display = 'flex';
+            }, 200);
+        });
+
+        // Social sharing functions
+        function shareOnTwitter() {
+            const text = encodeURIComponent(`I got "${result.textContent}" on CharadesOnline.org! Try this fun charades generator:`);
+            const url = encodeURIComponent('https://charadesonline.org');
+            window.open(`https://twitter.com/intent/tweet?text=${text}&url=${url}`, '_blank');
+        }
+
+        function shareOnFacebook() {
+            const url = encodeURIComponent('https://charadesonline.org');
+            window.open(`https://www.facebook.com/sharer/sharer.php?u=${url}`, '_blank');
+        }
+
+        function shareOnWhatsApp() {
+            const text = encodeURIComponent(`I got "${result.textContent}" on CharadesOnline.org! Try it yourself:`);
+            const url = encodeURIComponent('https://charadesonline.org');
+            window.open(`https://wa.me/?text=${text} ${url}`, '_blank');
+        }
+
+        function copyToClipboard() {
+            const text = `I got "${result.textContent}" on CharadesOnline.org!`;
+            navigator.clipboard.writeText(text).then(() => {
+                const button = document.querySelector('button:last-child');
+                const originalText = button.querySelector('span').textContent;
+                button.querySelector('span').textContent = 'Copied!';
+                setTimeout(() => {
+                    button.querySelector('span').textContent = originalText;
+                }, 2000);
+            });
+        }
+    </script>
+</body>
+</html>
