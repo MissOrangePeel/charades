@@ -30,6 +30,23 @@ git clone https://github.com/MissOrangePeel/charades.git
 
 2. Open `index.html` in your browser
 
+## Ultimate Online Charades Word Generator
+
+Generate instant, fun, and family-friendly words for your next game night with our free online charades generator. Perfect for:
+- 🎉 Party Games
+- 👨‍👩‍👧‍👦 Family Gatherings
+- 🏫 Classroom Activities
+- 🤝 Team Building Events
+
+### Key Features
+- Instant word generation
+- Completely free
+- Family-friendly content
+- No downloads required
+
+### SEO Keywords
+charades generator, game word maker, party game ideas, family game words, random word generator
+
 ## License
 
-Copyright © 2024 CharadesOnline.org. All rights reserved.
+Copyright 2024 CharadesOnline.org. All rights reserved.
